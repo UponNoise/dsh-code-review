@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Code Review",
+    "description": "Left-sidebar code review panel connected to GitHub: review local changes, commits, or pull requests with Codex-style prioritized findings."
+  }
+}

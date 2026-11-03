@@ -1,0 +1,13 @@
+dsh-code-review
+Copyright 2026 Noise (UponNoise)
+
+This product includes the review rubric in `lib/rubric.md`, copied verbatim
+from OpenAI Codex:
+
+  https://github.com/openai/codex
+  codex-rs/prompts/templates/review/rubric.md (tag rust-v0.149.0)
+
+Copyright OpenAI. Licensed under the Apache License, Version 2.0.
+A copy of that license is provided in `LICENSE-APACHE-2.0`.
+The review environment note in `lib/prompt.js` and the remaining source code
+are original to this project and licensed under the MIT License (see `LICENSE`).

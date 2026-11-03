@@ -1,0 +1,66 @@
+{
+  "name": "@uponnoise/dsh-code-review",
+  "version": "0.1.0",
+  "description": "Codex-style code review panel for DeepSeek Harness: local diffs, commits, and GitHub pull requests with P0-P3 findings. / DSH 侧栏代码审查：对标 Codex review，连接 GitHub，审查本地改动或 PR。",
+  "license": "MIT",
+  "author": "Noise (UponNoise)",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "LICENSE-APACHE-2.0",
+    "NOTICE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "code-review",
+    "codex",
+    "github",
+    "pull-request",
+    "diff",
+    "ai-code-review"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UponNoise/dsh-code-review.git"
+  },
+  "homepage": "https://github.com/UponNoise/dsh-code-review#readme",
+  "bugs": {
+    "url": "https://github.com/UponNoise/dsh-code-review/issues"
+  },
+  "scripts": {
+    "test": "node scripts/test-host.mjs && node scripts/test-client-render.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-api-workspace-controller"
+      ]
+    }
+  }
+}

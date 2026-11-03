@@ -1,0 +1,11 @@
+# dsh-code-review bundle patch: 把一个 Host 插件行插进 profile 的 loader。
+# 客户端半由 package.json 的 dsh.client 声明发现，无需在这里列出。
+- insert:
+    - id: code-review
+      name: '@uponnoise/dsh-code-review'
+      config:
+        # 侧栏入口和审查页都会链接这个 GitHub 账号。
+        githubUser: UponNoise
+        # 可选：覆盖审查所用的模型（默认跟随 profile 的 agent-default-model）。
+        # provider: deepseek-official
+        # model: deepseek-flash

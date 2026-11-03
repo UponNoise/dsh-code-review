@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "代码审查",
+    "description": "左侧栏代码审查面板：对接 GitHub，像 Codex review 一样审查本地改动、提交或 PR，输出带优先级的审查发现。"
+  }
+}
