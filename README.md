@@ -1,5 +1,7 @@
 # dsh-code-review
 
+[![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com/p/UponNoise/dsh-code-review/)
+
 DeepSeek Harness 的「代码审查」插件：左侧栏一个入口，主面板复刻 Codex 的代码审查体验。
 
 > 社区插件，与 DeepSeek、OpenAI、GitHub 均无隶属或背书关系。
